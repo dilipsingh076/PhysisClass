@@ -6,7 +6,7 @@ import Link from 'next/link';
 import SignIn from '@/pages/api/auth/signin';
 import Image from 'next/image';
 import Nav from './Nav';
-
+import styles from '@/app/styles/navbar.module.css'
 const Navbar = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
 
@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="static"  className={styles.appBar}>
         <Toolbar>
           <IconButton
             size="large"
@@ -35,16 +35,21 @@ const Navbar = () => {
             color="inherit"
             aria-label="menu"
             onClick={handleDrawerOpen}
+            className={styles.menuButton}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             {/* Brand Logo */}
-            <Link href={"/"} > <Image src={"/brandLogo.svg"} alt='Brand Logo' width={150} height={40} /></Link>
+            <Link href={"/"} > 
+            {/* <a className={styles.brandLogo}> */}
+                <Image src="/brandLogo.svg" alt="Brand Logo" width={150} height={40} />
+            {/* </a> */}
+            </Link>
           </Typography>
-          <Typography variant="h6" component="div"  sx={{ flexGrow: 1 }}>
-            <Nav/>
-          </Typography>
+          <div className={styles.navBarDesktop}>
+            <Nav />
+          </div>
           <SignIn />
           {/* <Signup /> */}
         </Toolbar>
