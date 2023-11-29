@@ -1,0 +1,29 @@
+.appBar {
+    background-color: #007bff;
+  }
+  
+  .menuButton {
+    margin-right: 10px;
+    display: block; /* Always show the menu button initially */
+  }
+  
+  .brandLogo {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navBarDesktop {
+    display: none;
+    flex-grow: 1;
+  }
+  
+  @media (min-width: 768px) {
+    .menuButton {
+      display: none; /* Hide the menu button on larger screens */
+    }
+  
+    .navBarDesktop {
+      display: block; /* Show the desktop navigation on larger screens */
+    }
+  }
