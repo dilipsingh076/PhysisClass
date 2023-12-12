@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className={styles.navBarDesktop}>
             <Nav />
           </div>
-          <SignIn />
+          {/* <SignIn /> */}
           {/* <Signup /> */}
         </Toolbar>
       </AppBar>
