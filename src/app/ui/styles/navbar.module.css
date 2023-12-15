@@ -1,5 +1,9 @@
 .appBar {
-    background-color: #007bff;
+    /* background-color: hsl(211, 100%, 50%); */
+    background-color: #ffffff;
+    color: black;
+    font:700;
+    font-size: 28px;
   }
   
   .menuButton {
@@ -25,5 +29,6 @@
   
     .navBarDesktop {
       display: block; /* Show the desktop navigation on larger screens */
+      font-size: 28px;
     }
   }

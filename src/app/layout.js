@@ -1,8 +1,8 @@
-import { Inter, Mulish } from 'next/font/google'
+import { Mulish } from 'next/font/google'
 import '@/app/ui/globals.css'
 import { inter } from '@/app/ui/fonts';
-import Navbar from '../components/Navbar/Navbar'
-import Loader from '@/components/Loading/page'
+import Navbar from '@/components/Navbar/Navbar'
+import Footer from '@/components/Footer/footer';
 
 
 //  we will find how to use this mulish in body as a css class.
@@ -21,9 +21,10 @@ export const mulish = Mulish({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className }>
+      <body className={inter.className } >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )
