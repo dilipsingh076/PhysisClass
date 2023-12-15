@@ -1,6 +1,6 @@
 import React from 'react'
-import heroStyles from "@/app/styles/herosection.module.css"
-import styles from "@/app/styles/common.module.css"
+import heroStyles from "@/app/ui/styles/herosection.module.css"
+import styles from "@/app/ui/styles/common.module.css"
 const Herosection = () => {
   return (
     <>

@@ -6,7 +6,7 @@ import Link from 'next/link';
 import SignIn from '@/pages/api/auth/signin';
 import Image from 'next/image';
 import Nav from './Nav';
-import styles from '@/app/styles/navbar.module.css'
+import styles from '@/app/ui/styles/navbar.module.css'
 const Navbar = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
 
@@ -42,9 +42,7 @@ const Navbar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             {/* Brand Logo */}
             <Link href={"/"} > 
-            {/* <a className={styles.brandLogo}> */}
-                <Image src="/brandLogo.svg" alt="Brand Logo" width={150} height={40} />
-            {/* </a> */}
+                <Image src="/logo1.jpg" alt="Brand Logo" width={150} height={60} />
             </Link>
           </Typography>
           <div className={styles.navBarDesktop}>
