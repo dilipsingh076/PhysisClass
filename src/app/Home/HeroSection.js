@@ -1,10 +1,24 @@
 import React from 'react'
 import heroStyles from "@/app/ui/styles/herosection.module.css"
 import styles from "@/app/ui/styles/common.module.css"
+import Box from '@/components/atoms/box'
 const Herosection = () => {
   return (
     <>
     <main className={heroStyles.main_section} >
+    {/* <Box
+       sx={{
+        border: '1px solid red',
+        width: "100%",
+        bgcolor: "#dde9ff",
+        color: "#2D2D2Dck",
+        height:'30%'
+        // clipPath: "ellipse(99% 100% at center bottom)",
+      }}
+      >
+        Hello dear
+
+      </Box> */}
     <div>
       <header className={styles.header}>
         <h1>Physics Classes for IIT JEE and NEET</h1>
